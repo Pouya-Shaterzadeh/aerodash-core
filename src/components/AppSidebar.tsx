@@ -11,6 +11,7 @@ import {
   SidebarFooter,
 } from "@/components/ui/sidebar";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import dronexLogo from "@/assets/dronex-logo.jpg";
 
 const menuItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
@@ -25,14 +26,16 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent>
-        <div className="px-6 py-4">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <span className="text-sm font-bold text-primary-foreground">DX</span>
-            </div>
+        <div className="px-6 py-4 border-b border-sidebar-border">
+          <div className="flex items-center gap-3">
+            <img 
+              src={dronexLogo} 
+              alt="DroneX Logo" 
+              className="h-10 w-10 object-contain"
+            />
             <div>
-              <p className="text-xs text-muted-foreground">DroneX Delivery Solutions</p>
-              <p className="text-sm font-semibold">Aerostack</p>
+              <p className="text-sm font-semibold text-foreground">Aerostack</p>
+              <p className="text-xs text-muted-foreground">Drone Logistics Platform</p>
             </div>
           </div>
         </div>
