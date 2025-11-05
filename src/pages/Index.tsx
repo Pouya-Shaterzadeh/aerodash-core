@@ -1,7 +1,8 @@
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { StatCard } from "@/components/StatCard";
-import { Package, Bot, TrendingUp, Boxes } from "lucide-react";
+import { Package, TrendingUp, Boxes } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import droneIcon from "@/assets/drone-icon.webp";
 
 const Index = () => {
   return (
@@ -19,7 +20,7 @@ const Index = () => {
             title="Active Drones"
             value="24"
             change="+2 from last week"
-            icon={Bot}
+            customIcon={droneIcon}
           />
           <StatCard
             title="Pending Orders"

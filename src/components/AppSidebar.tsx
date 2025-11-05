@@ -33,10 +33,12 @@ export function AppSidebar() {
       <SidebarContent>
         <div className="px-6 py-4 border-b border-sidebar-border">
           <div className="flex items-center gap-3">
-            <img src={dronexLogo} alt="DroneX Logo" className="h-10 w-10 object-contain" />
+            <div className="h-10 w-10 rounded-lg bg-background flex items-center justify-center overflow-hidden">
+              <img src={dronexLogo} alt="DroneX Logo" className="h-full w-full object-cover" />
+            </div>
             <div>
               <p className="text-lg font-bold text-foreground tracking-tight">Aerostack</p>
-              <p className="text-xs font-semibold text-accent tracking-wide">DroneX Delivery Solutions</p>
+              <p className="text-xs font-semibold text-muted-foreground/80 tracking-wide">DroneX Delivery Solutions</p>
             </div>
           </div>
         </div>
