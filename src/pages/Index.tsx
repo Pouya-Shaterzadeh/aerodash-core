@@ -2,7 +2,7 @@ import { DashboardLayout } from "@/components/DashboardLayout";
 import { StatCard } from "@/components/StatCard";
 import { Package, TrendingUp, Boxes } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import droneIcon from "@/assets/drone-icon.webp";
+import droneIcon from "@/assets/drone-icon.png";
 
 const Index = () => {
   return (
