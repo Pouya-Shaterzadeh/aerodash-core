@@ -1,6 +1,6 @@
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { StatCard } from "@/components/StatCard";
-import { Package, Plane, TrendingUp, Boxes } from "lucide-react";
+import { Package, Bot, TrendingUp, Boxes } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
@@ -19,7 +19,7 @@ const Index = () => {
             title="Active Drones"
             value="24"
             change="+2 from last week"
-            icon={Plane}
+            icon={Bot}
           />
           <StatCard
             title="Pending Orders"

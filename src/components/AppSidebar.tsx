@@ -35,8 +35,8 @@ export function AppSidebar() {
           <div className="flex items-center gap-3">
             <img src={dronexLogo} alt="DroneX Logo" className="h-10 w-10 object-contain" />
             <div>
-              <p className="text-sm font-semibold text-foreground">Aerostack</p>
-              <p className="text-muted-foreground text-xs">DroneX Delivery Solutions</p>
+              <p className="text-lg font-bold text-foreground tracking-tight">Aerostack</p>
+              <p className="text-xs font-semibold text-accent tracking-wide">DroneX Delivery Solutions</p>
             </div>
           </div>
         </div>
