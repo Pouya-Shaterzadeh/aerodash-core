@@ -21,8 +21,7 @@ export function StatCard({ title, value, change, icon: Icon, customIcon }: StatC
             <img 
               src={customIcon} 
               alt={title} 
-              className="h-4 w-4 brightness-0 saturate-100" 
-              style={{ filter: 'invert(17%) sepia(90%) saturate(3000%) hue-rotate(198deg) brightness(95%) contrast(101%)' }}
+              className="h-4 w-4 [filter:brightness(0)_saturate(100%)_invert(27%)_sepia(98%)_saturate(2976%)_hue-rotate(200deg)_brightness(98%)_contrast(101%)] dark:[filter:brightness(0)_saturate(100%)_invert(64%)_sepia(68%)_saturate(3532%)_hue-rotate(193deg)_brightness(101%)_contrast(101%)]" 
             />
           ) : Icon ? (
             <Icon className="h-4 w-4 text-primary" />
