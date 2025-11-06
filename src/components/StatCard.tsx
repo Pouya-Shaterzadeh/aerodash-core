@@ -18,10 +18,21 @@ export function StatCard({ title, value, change, icon: Icon, customIcon }: StatC
         </CardTitle>
         <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
           {customIcon ? (
-            <img 
-              src={customIcon} 
-              alt={title} 
-              className="h-4 w-4 [filter:brightness(0)_saturate(100%)_invert(27%)_sepia(98%)_saturate(2976%)_hue-rotate(200deg)_brightness(98%)_contrast(101%)] dark:[filter:brightness(0)_saturate(100%)_invert(64%)_sepia(68%)_saturate(3532%)_hue-rotate(193deg)_brightness(101%)_contrast(101%)]" 
+            <span
+              role="img"
+              aria-label={title}
+              className="h-4 w-4 bg-primary"
+              style={{
+                WebkitMaskImage: `url(${customIcon})`,
+                maskImage: `url(${customIcon})`,
+                WebkitMaskRepeat: 'no-repeat',
+                maskRepeat: 'no-repeat',
+                WebkitMaskPosition: 'center',
+                maskPosition: 'center',
+                WebkitMaskSize: 'contain',
+                maskSize: 'contain',
+                display: 'inline-block',
+              }}
             />
           ) : Icon ? (
             <Icon className="h-4 w-4 text-primary" />
